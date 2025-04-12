@@ -30,11 +30,11 @@ export class UserEntity {
    naverId: string;
    
    @CreateDateColumn({name: "created_dt", type: "timestamp"})
-   createdDt: string;
+   createdDt: Date;
       
    @UpdateDateColumn({name: "updated_dt", type: "timestamp"})
-   updatedDt: string;
+   updatedDt: Date;
    
    @DeleteDateColumn({name: "deleted_dt", type: "timestamp"})
-   deletedDt: string;
+   deletedDt: Date;
 }
